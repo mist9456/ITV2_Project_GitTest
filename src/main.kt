@@ -129,3 +129,97 @@ fun Begin9() {
     println("Корень квадратный из $b = $SQRT")
 
 }
+
+
+fun if5() {
+    print(
+        "If5. Даны три целых числа. Найти количество положительных и количество\n" +
+                "отрицательных чисел в исходном наборе.\n"
+    )
+    print("Введите первое число: ")
+    var a = readLine()!!.toInt()
+    print("Введите второе число: ")
+    var b = readLine()!!.toInt()
+    print("Введите третье число: ")
+    var c = readLine()!!.toInt()
+    var count_positive = 0
+    var count_negative = 0
+    var count_null = 0
+    if (a == 0)
+        count_null++
+    else
+        if (a < 0)
+            count_negative++
+        else
+            count_positive++
+    if (b == 0)
+        count_null++
+    else
+        if (b < 0)
+            count_negative++
+        else
+            count_positive++
+    if (c == 0)
+        count_null++
+    else
+        if (c < 0)
+            count_negative++
+        else
+            count_positive++
+    print(
+        "Кол-во положительных чисел - $count_positive \n" +
+                "Кол-во отрицательных - $count_negative\n" +
+                " Кол-во нулей - $count_null"
+    )
+
+
+}
+
+fun if6() {
+    print("If6. Даны два числа. Вывести большее из них.\n")
+    print("Введите первое число - ")
+    var a = readLine()!!.toInt()
+    print("Введите второе число - ")
+    var b = readLine()!!.toInt()
+    if (a == b)
+        print("Числа равны")
+    else
+        if (a > b)
+            print("Большее число - а, оно равно $a")
+        else
+            print("Большее число - b, оно равно $b")
+
+
+}
+
+fun if7() {
+    print("If7. Даны два числа. Вывести порядковый номер меньшего из них.\n")
+    print("Введите первое число - ")
+    var a = readLine()!!.toInt()
+    print("Введите второе число - ")
+    var b = readLine()!!.toInt()
+    if (a == b)
+        print("Числа равны")
+    else
+        if (a > b)
+            print("Второе число меньше.")
+        else
+            print("Первое число меньше.")
+}
+
+fun if8() {
+    print("If8. Даны два числа. Вывести вначале большее, а затем меньшее из них.\n")
+    print("Введите первое число - ")
+    var a = readLine()!!.toInt()
+    print("Введите второе число - ")
+    var b = readLine()!!.toInt()
+    if (a == b)
+        print("Числа равны")
+    else
+        if (a > b)
+            print("Первое число а, которое равно $a больше второго числа, которое равно $b")
+        else
+            print("Второе число b, которое равно $b, больше первого числа, которое равно $a")
+
+
+}
